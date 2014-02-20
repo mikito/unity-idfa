@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+if [ $2 != "iPhone" ]; then
+  exit;
+fi
+
+curdir=`pwd`
+cp "$curdir/Assets/Editor/IDFA/DeviceSettings.mm" "$1/Classes/Unity/DeviceSettings.mm"
